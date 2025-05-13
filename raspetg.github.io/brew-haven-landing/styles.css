@@ -1,0 +1,201 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: #3c2f2f;
+  color: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #f4a261;
+}
+
+/* Hero Section */
+.hero {
+  background: url('coffee-bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 60px; /* Account for fixed header */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background: #f4a261;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.cta-button:hover {
+  background: #e76f51;
+}
+
+/* Features Section */
+.features {
+  padding: 4rem 0;
+  background: #f9f9f9;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.feature h3 {
+  margin-bottom: 1rem;
+}
+
+/* Sign-Up Section */
+.signup {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.signup h2 {
+  margin-bottom: 1rem;
+}
+
+.signup p {
+  margin-bottom: 2rem;
+}
+
+.signup form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.signup input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.signup button {
+  padding: 0.8rem 1.5rem;
+  background: #f4a261;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup button:hover {
+  background: #e76f51;
+}
+
+/* Footer */
+footer {
+  background: #3c2f2f;
+  color: #fff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #f4a261;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .feature-grid {
+    flex-direction: column;
+  }
+
+  .signup form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .signup input {
+    width: 100%;
+  }
+}
